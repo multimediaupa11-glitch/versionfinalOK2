@@ -161,7 +161,7 @@ export default function Header() {
               </div>
               <div className="text-sm hidden md:block">
                 <div className="font-medium text-gray-900 dark:text-white">
-                  {authUser ? `${authUser.profile.prenom} ${authUser.profile.nom}` : 'Utilisateur'}
+                  {authUser ? `${authUser.profile.firstName} ${authUser.profile.lastName}` : 'Utilisateur'}
                 </div>
                 <div className="text-gray-500 dark:text-gray-400">
                   {authUser ? getRoleLabel(authUser.role) : 'Rôle'}
